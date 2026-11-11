@@ -25,7 +25,17 @@
     },
     "plugins": [
       "expo-router",
-      "expo-font"
+      "expo-font",
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Микрофон нужен, чтобы говорить с ментором голосом.",
+          "speechRecognitionPermission": "Распознавание речи превращает голос в текст разговора с ментором.",
+          "androidSpeechServicePackages": [
+            "com.google.android.googlequicksearchbox"
+          ]
+        }
+      ]
     ],
     "scheme": "aimentor",
     "backgroundColor": "#14120f"

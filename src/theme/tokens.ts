@@ -17,6 +17,11 @@ export const colors = {
   bgTransparent: 'rgba(20,18,15,0)',
   accentGlow: 'rgba(232,153,94,0.4)',
   accentShadow: 'rgba(232,153,94,0.35)',
+  /** Обводка и фон чипов-вариантов ответа, дуги записи голоса. */
+  accentLine: 'rgba(232,153,94,0.45)',
+  accentSoft: 'rgba(232,153,94,0.12)',
+  /** Ошибки: нет доступа к микрофону, не удалось распознать речь. */
+  danger: '#e07a6a',
 } as const;
 
 export const spacing = {
@@ -31,6 +36,8 @@ export const spacing = {
 export const radius = {
   bar: 2,
   card: 22,
+  /** Ответ пользователя в диалоге. */
+  bubble: 18,
   full: 999,
 } as const;
 
@@ -51,6 +58,10 @@ export const typography = {
   mentor: { fontFamily: fonts.mentor, fontSize: 23, lineHeight: 23 * 1.32 },
   body: { fontFamily: fonts.ui, fontSize: 16, lineHeight: 16 * 1.4 },
   caption: { fontFamily: fonts.ui, fontSize: 13 },
+  /** Текст, который появляется по мере диктовки. */
+  dictation: { fontFamily: fonts.ui, fontSize: 18, lineHeight: 18 * 1.45 },
+  /** Подписи чипов и кнопок в диалоге. */
+  chip: { fontFamily: fonts.uiMedium, fontSize: 14 },
   micro: { fontFamily: fonts.ui, fontSize: 11 },
   tab: { fontFamily: fonts.uiMedium, fontSize: 11 },
   /** Надзаголовок секции: «ТЕЗИС ДНЯ». */
@@ -66,4 +77,8 @@ export const layout = {
   tabBarContent: 70,
   tabBarBottomPadding: 30,
   practiceButton: 64,
+  /** Круглые кнопки в поле ввода диалога: микрофон, отправка, отмена записи. */
+  composerButton: 48,
+  /** Кнопка «Готово» во время записи голоса, вокруг неё расходятся дуги. */
+  recordButton: 64,
 } as const;
